@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" class="widthfull" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" class="width80 paddingup" fxLayoutAlign="space-around center" [fxShow]="true">
+    <div fxLayout="column wrap" class="width30" fxFlex="30" fxLayoutAlign="start stretch" [fxShow]="true">
+      <h1>
+        VEEZA</h1>
+    </div>
+    <div fxLayout="column wrap" class="width30" fxFlex="30" fxLayoutAlign="space-evenly stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let list of page.lists">
+          <p>
+            {{list}}
+            <!-- dgvfh -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="column wrap" class="width30" fxFlex="30" fxLayoutAlign="center end" [fxShow]="true"><button mat-button class="displayflex borderadious buttonnav">Get Started</button></div>
+  </div>
+</div>

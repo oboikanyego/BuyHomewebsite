@@ -1,0 +1,9 @@
+<div fxLayout="column wrap" class="footertxt backcolor" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" class="width90" fxLayoutAlign="space-between stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="widths30" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let item of page.footerArr">
+      <h5>
+        {{item}}
+      </h5>
+    </div>
+  </div>
+</div>

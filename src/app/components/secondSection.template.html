@@ -1,0 +1,39 @@
+<div fxLayout="column " fxLayoutAlign="center center" [fxShow]="true">
+  <div fxLayout="row wrap" class="marginbot width90" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="width50" fxLayoutAlign="center center" [fxShow]="true">
+      <h1 class="iconSec1">
+        Explore Our Project</h1>
+    </div>
+    <div fxLayout="column wrap" class="paddingup width50" fxLayoutAlign="start stretch" [fxShow]="true">
+      <p class="fontsize12 textsec1">
+        Aliquam tincidunt nibh eu sem tincidunt consectetur. Proin commodo scelerisque finibus. Integer ut mattis est. Aliquam erat volutpat. Sed mollis mattis lectus ac viverra. Sed non accumsan ipsum. Nam tincidunt purus ac augue mollis tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam nibh erat, tincidunt in magna quis, ultrices consequat sem. Praesent velit elit, finibus vel nibh nec, posuere iaculis nunc. Proin a feugiat augue. In iaculis augue lorem, ut tincidunt nulla vestibulum et. Aenean iaculis justo turpis. Duis porta cursus libero ac gravida.</p>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutGap="3px" fxLayoutAlign="space-around stretch" [fxShow]="true">
+    <div fxLayout="column wrap" style="width:240px" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let item of page.secondSection">
+      <div fxLayout="row wrap" class="marginbot10 section2img" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="{{item.images}}" class="widthfull"></div>
+      <div fxLayout="row wrap" class="marginbot10" fxLayoutAlign="start stretch" [fxShow]="true">
+        <h3 class="width60 fontsize25 iconSec1">
+          {{item.title}}
+        </h3>
+      </div>
+      <div fxLayout="row wrap" class="marginbot10" fxLayoutAlign="start stretch" [fxShow]="true">
+        <p class="fontsize12 textsec3">
+          <!-- Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. -->
+          {{item.text}}
+        </p>
+      </div>
+      <div fxLayout="row wrap" class="marginbot10" fxLayoutAlign="start stretch" [fxShow]="true">
+        <h4 class="fontsize12 textsec3">
+          <!-- January 18•2022 -->
+          {{item.date}}
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" class="marginbot width90" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div class="widthfull">
+      <hr>
+    </div>
+  </div>
+</div>

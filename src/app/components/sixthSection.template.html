@@ -1,0 +1,52 @@
+<div fxLayout="column wrap" class="backgroundblack" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" class="width90" fxLayoutAlign="start stretch" [fxShow]="true">
+    <h1>
+      <!-- Ready to take action? -->{{page.sixSection.heading}}
+    </h1>
+  </div>
+  <div fxLayout="row wrap" class="width90" fxLayoutAlign="start center" [fxShow]="true">
+    <p class="marginrig heightfull">
+      <!-- Get in touch --><b>{{page.sixSection.paragraph}}</b>
+    </p>
+    <mat-icon class="contactUsicon borderadious">{{page.sixSection.icon}}</mat-icon>
+  </div>
+  <div fxLayout="row wrap" class="marginbot width90" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div class="widthfull height10">
+      <hr style="color:white">
+    </div>
+  </div>
+  <div fxLayout="row wrap" class="marginbot width90" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="column wrap" class="width50" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="{{page.sixSection.logo}}" class="widthpx40">
+        <h2>
+          {{page.sixSection.logoHeading}}
+        </h2>
+      </div>
+    </div>
+    <div fxLayout="column wrap" class="width50" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true">
+        <div fxLayout="column wrap" class="width32" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let item of page.sixSection.list1">
+            <p>
+              {{item}}
+            </p>
+          </div>
+        </div>
+        <div fxLayout="column wrap" class="width32" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let item of page.sixSection.list2">
+            <p>
+              {{item}}
+            </p>
+          </div>
+        </div>
+        <div fxLayout="column wrap" class="width32" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let item of page.sixSection.list3">
+            <p>
+              {{item}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
